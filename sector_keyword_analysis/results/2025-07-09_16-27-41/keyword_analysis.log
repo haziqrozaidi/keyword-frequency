@@ -1,0 +1,11 @@
+2025-07-09 16:27:41,521 - INFO - Results will be saved to: results/2025-07-09_16-27-41
+2025-07-09 16:27:41,521 - INFO - Starting keyword frequency analysis
+2025-07-09 16:27:41,637 - INFO - NLTK stopwords downloaded successfully
+2025-07-09 16:27:41,649 - INFO - Dataset loaded successfully with 852 rows
+2025-07-09 16:27:41,649 - INFO - Preprocessing tweet content
+2025-07-09 16:27:41,700 - INFO - Analyzing keyword frequency by sector
+2025-07-09 16:27:41,836 - INFO - Summary table created successfully
+2025-07-09 16:27:42,124 - INFO - Visualization saved as sector_keyword_matches.png
+2025-07-09 16:27:42,247 - INFO - Percentage visualization saved as sector_tweet_percentage.png
+2025-07-09 16:27:42,259 - INFO - Enriched dataset saved to tweets_with_sector_analysis.csv
+2025-07-09 16:27:42,259 - INFO - Summary table saved to sector_keyword_summary.csv
