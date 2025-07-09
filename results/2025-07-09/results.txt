@@ -1,0 +1,92 @@
+(.env) haziq@DESKTOP-43AI8SU:~/repos/keyword-frequency$ python3 keyword_analysis.py 
+[nltk_data] Downloading package punkt_tab to /home/haziq/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+[nltk_data] Downloading package stopwords to /home/haziq/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Loaded dataset with 852 tweets and 9 columns.
+
+Dataset sample:
+              Tweet ID                                                URL  ... Views                        Date
+0  1917619094590783762  https://x.com/AiTingLi/status/1917619094590783762  ...     3  April 30, 2025 at 04:36 PM
+1  1917608812640362676  https://x.com/Ad_Backprop/status/1917608812640...  ...     9  April 30, 2025 at 03:55 PM
+2  1917607212345876865  https://x.com/theedgemalaysia/status/191760721...  ...   340  April 30, 2025 at 03:49 PM
+3  1917606828290245113  https://x.com/UMonline/status/1917606828290245113  ...   165  April 30, 2025 at 03:47 PM
+4  1917603056050659692  https://x.com/501Awani/status/1917603056050659692  ...  1440  April 30, 2025 at 03:32 PM
+
+[5 rows x 9 columns]
+
+Columns: ['Tweet ID', 'URL', 'Content', 'Likes', 'Retweets', 'Replies', 'Quotes', 'Views', 'Date']
+
+Preprocessing tweets...
+Parsing dates...
+Analyzing keyword frequencies...
+
+Top 20 most frequent words:
+ai: 807
+malaysia: 493
+yang: 175
+dan: 160
+digital: 152
+dalam: 110
+untuk: 99
+di: 97
+amp: 93
+ini: 91
+dengan: 90
+malaysian: 89
+tak: 69
+malaysias: 66
+teknologi: 65
+future: 60
+ni: 60
+ada: 53
+us: 52
+global: 51
+Performing TF-IDF analysis...
+
+Top 20 keywords by TF-IDF score:
+         word       tfidf
+3          ai  120.797042
+57   malaysia   98.447141
+82        the   90.308059
+85         to   81.416394
+7         and   77.921862
+43         in   66.199909
+69         of   50.841393
+94       with   48.397896
+34        for   46.235415
+48         is   35.351665
+31    digital   32.343835
+96       yang   31.687941
+70         on   31.104525
+29         di   30.543411
+25        dan   27.824662
+5         amp   26.817662
+58  malaysian   25.626450
+35       from   24.710885
+11         at   23.030601
+19         by   22.669937
+Tracking keyword trends...
+Grouping data by month...
+Grouping data by quarter...
+Plotting trends...
+Plot saved as keyword_trends_by_month.png
+Plot saved as keyword_trends_by_quarter.png
+Creating heatmap visualization...
+Plot saved as keyword_frequency_heatmap.png
+Creating bar chart visualizations...
+/home/haziq/repos/keyword-frequency/keyword_analysis.py:293: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x='keyword', y='count', data=keyword_counts, palette='viridis')
+Plot saved as keyword_frequency_bar_chart.png
+/home/haziq/repos/keyword-frequency/keyword_analysis.py:334: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x='tfidf', y='word', data=top_tfidf, palette='rocket', orient='h')
+Plot saved as tfidf_bar_chart.png
+
+Analysis complete!
+(.env) haziq@DESKTOP-43AI8SU:~/repos/keyword-frequency$ 
